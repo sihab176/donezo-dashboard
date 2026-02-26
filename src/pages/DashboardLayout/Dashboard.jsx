@@ -1,4 +1,5 @@
 import ProjectAnalysis from "../../components/ProjectAnalysis";
+import ProjectProgress from "../../components/ProjectProgress";
 import Reminder from "../../components/Reminder";
 import StatsCard from "../../components/StatsCard";
 import TeamCollaboration from "../../components/TeamCollaboration";
@@ -51,9 +52,9 @@ const Dashboard = () => {
           <div className="col-span-5 bg-white p-3  rounded-2xl shadow ">
             <TeamCollaboration/>
           </div>
-          {/* team 2 */}
-          <div className="col-span-4 bg-white p-3 h-52 rounded-2xl shadow ">
-            Team2
+          {/* ProjectProgress*/}
+          <div className="col-span-4 bg-white p-3  rounded-2xl shadow ">
+            <ProjectProgress/>
           </div>
           {/* Time  */}
           {/* <div className="col-span-3 row-span-1 bg-white p-3 rounded-2xl shadow ">
