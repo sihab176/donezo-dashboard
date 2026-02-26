@@ -1,10 +1,11 @@
 import ProjectAnalysis from "../../components/ProjectAnalysis";
 import Reminder from "../../components/Reminder";
 import StatsCard from "../../components/StatsCard";
+import TeamCollaboration from "../../components/TeamCollaboration";
 
 const Dashboard = () => {
   return (
-    <div className="">
+    <div className=" ">
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatsCard
@@ -32,20 +33,32 @@ const Dashboard = () => {
           trend="On Discuss"
         />
       </div>
-      <main className="py-4 min-h-screen">
+      <main className="py-4 ">
         <div className="grid grid-cols-12 gap-2">
           {/* project Analysis */}
-          <div className="col-span-6 bg-white p-3 rounded-2xl shadow ">
+          <div className="col-span-6 bg-white p-3 h-52 rounded-2xl shadow ">
             <ProjectAnalysis />
           </div>
           {/* reminder */}
-          <div className="col-span-3 bg-white p-3 rounded-2xl shadow ">
+          <div className="col-span-3 bg-white p-3 h-52 rounded-2xl shadow ">
            <Reminder />
           </div>
           {/* project */}
-          <div className="col-span-3 bg-white p-3 rounded-2xl shadow ">
+          <div className="col-span-3 bg-white p-3 row-span-2 rounded-2xl shadow ">
            Project
           </div>
+          {/* team 1 */}
+          <div className="col-span-5 bg-white p-3  rounded-2xl shadow ">
+            <TeamCollaboration/>
+          </div>
+          {/* team 2 */}
+          <div className="col-span-4 bg-white p-3 h-52 rounded-2xl shadow ">
+            Team2
+          </div>
+          {/* Time  */}
+          {/* <div className="col-span-3 row-span-1 bg-white p-3 rounded-2xl shadow ">
+            Time
+          </div> */}
         </div>
       </main>
     </div>

@@ -11,7 +11,7 @@ const DashboardLayout = () => {
       <main className="flex-1 p-2">
         <Topbar />
         
-        <div className="bg-gray-100 p-4 h-screen rounded-2xl ">
+        <div className="bg-gray-100 p-4  rounded-2xl ">
           <Outlet />
         </div>
       </main>
