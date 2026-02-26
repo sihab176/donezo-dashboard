@@ -1,3 +1,4 @@
+import ProjectAnalysis from "../../components/ProjectAnalysis";
 import StatsCard from "../../components/StatsCard";
 
 const Dashboard = () => {
@@ -30,6 +31,15 @@ const Dashboard = () => {
           trend="On Discuss"
         />
       </div>
+      <main className="py-4 min-h-screen">
+        <div className="grid grid-cols-12 gap-2">
+          {/* project Analysis */}
+          <div className="col-span-6 bg-white p-3 rounded-lg shadow ">
+            <ProjectAnalysis />
+          </div>
+           
+        </div>
+      </main>
     </div>
   );
 };
