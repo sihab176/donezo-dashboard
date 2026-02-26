@@ -1,4 +1,5 @@
 import ProjectAnalysis from "../../components/ProjectAnalysis";
+import Reminder from "../../components/Reminder";
 import StatsCard from "../../components/StatsCard";
 
 const Dashboard = () => {
@@ -34,10 +35,17 @@ const Dashboard = () => {
       <main className="py-4 min-h-screen">
         <div className="grid grid-cols-12 gap-2">
           {/* project Analysis */}
-          <div className="col-span-6 bg-white p-3 rounded-lg shadow ">
+          <div className="col-span-6 bg-white p-3 rounded-2xl shadow ">
             <ProjectAnalysis />
           </div>
-           
+          {/* reminder */}
+          <div className="col-span-3 bg-white p-3 rounded-2xl shadow ">
+           <Reminder />
+          </div>
+          {/* project */}
+          <div className="col-span-3 bg-white p-3 rounded-2xl shadow ">
+           Project
+          </div>
         </div>
       </main>
     </div>
