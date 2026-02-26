@@ -1,4 +1,5 @@
 import ProjectAnalysis from "../../components/ProjectAnalysis";
+import { ProjectList } from "../../components/ProjectList";
 import ProjectProgress from "../../components/ProjectProgress";
 import Reminder from "../../components/Reminder";
 import StatsCard from "../../components/StatsCard";
@@ -45,8 +46,8 @@ const Dashboard = () => {
            <Reminder />
           </div>
           {/* project */}
-          <div className="col-span-3 bg-white p-3 row-span-2 rounded-2xl shadow ">
-           Project
+          <div className="col-span-3 px-1 row-span-2  ">
+           <ProjectList/>
           </div>
           {/* team 1 */}
           <div className="col-span-5 bg-white p-3  rounded-2xl shadow ">

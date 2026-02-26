@@ -61,7 +61,7 @@ const Sidebar = () => {
         </div>
 
         {/* Ad Box */}
-        <div className="bg-[#0A1F11] rounded-2xl p-6 text-white mt-2">
+        <div className="bg-[url('/sidebarImge.png')] bg-cover bg-center rounded-2xl p-6 text-white mt-2">
           <p className="text-sm mb-4">Download our Mobile App</p>
           <button className="bg-[#1E5128] w-full py-2 rounded-lg text-xs">
             Download

@@ -6,7 +6,9 @@ import Topbar from "../../components/Topbar";
 const DashboardLayout = () => {
   return (
     <div className="flex min-h-screen bg-white font-sans">
-      <Sidebar />
+      <div className="lg:sticky lg:top-0 lg:left-0 lg:h-screen">
+        <Sidebar />
+      </div>
       
       <main className="flex-1 p-2">
         <Topbar />
