@@ -36,31 +36,27 @@ const Dashboard = () => {
         />
       </div>
       <main className="py-4 ">
-        <div className="grid grid-cols-12 gap-2">
+        <div className="grid md:grid-cols-12 col-span-6 gap-2">
           {/* project Analysis */}
-          <div className="col-span-6 bg-white p-3 h-52 rounded-2xl shadow ">
+          <div className="lg:col-span-6 md:col-span-6 col-span-4 bg-white p-3 h-52 rounded-2xl shadow ">
             <ProjectAnalysis />
           </div>
           {/* reminder */}
-          <div className="col-span-3 bg-white p-3 h-52 rounded-2xl shadow ">
+          <div className="md:col-span-3 col-span-2  bg-white p-3 h-52 rounded-2xl shadow ">
            <Reminder />
           </div>
           {/* project */}
-          <div className="col-span-3 px-1 row-span-2  ">
+          <div className="col-span-3 px-1 row-span-2 md:block hidden  ">
            <ProjectList/>
           </div>
-          {/* team 1 */}
+          {/* TeamCollaboration */}
           <div className="col-span-5 bg-white p-3  rounded-2xl shadow ">
             <TeamCollaboration/>
           </div>
           {/* ProjectProgress*/}
-          <div className="col-span-4 bg-white p-3  rounded-2xl shadow ">
+          <div className="col-span-4  bg-white p-3  rounded-2xl shadow  ">
             <ProjectProgress/>
           </div>
-          {/* Time  */}
-          {/* <div className="col-span-3 row-span-1 bg-white p-3 rounded-2xl shadow ">
-            Time
-          </div> */}
         </div>
       </main>
     </div>

@@ -11,7 +11,7 @@ const data = [
 
 const ProjectAnalysis = () => {
   return (
-    <div className="flex items-end justify-between gap-6 h-48 ">
+    <div className="flex items-end justify-between lg:gap-5 gap-1 md:gap-2 h-48 ">
       {data.map((item, index) => (
         <div key={index} className="flex flex-col items-center  gap-1">
           <div

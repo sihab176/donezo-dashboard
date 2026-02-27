@@ -35,10 +35,12 @@ const Register = () => {
         updateUser({ displayName: name }).then(() => {
           setUser({ ...users, displayName: name });
           navigate("/dashboard");
+          alert("User created successfully");
         });
       })
       .catch((error) => {
         console.log(error);
+        alert("User creation failed: " + error.message);
       });
   };
   console.log(requiredError);

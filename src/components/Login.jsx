@@ -15,15 +15,17 @@ const Login = () => {
       .then((result) => {
         console.log(result);
         navigate("/dashboard");
+        alert("User logged in successfully");
       })
       .catch((error) => {
         console.log(error);
+        alert("User login failed: " + error.message);
       });
   };
 
   return (
     <section className="flex justify-center items-center h-screen w-full bg-gray-100">
-      <div className="max-w-1/3 mx-auto p-6 rounded-md sm:p-10 bg-white">
+      <div className="max-w-4xl mx-auto p-6 rounded-md sm:p-10 bg-white">
         <div className="mb-8 text-center">
           <h1 className="my-3 text-4xl font-bold">Sign in</h1>
           <p className="text-sm dark:text-gray-600">

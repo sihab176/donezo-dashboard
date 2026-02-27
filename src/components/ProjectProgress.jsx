@@ -12,9 +12,9 @@ export default function ProjectProgress() {
 
       <div className="relative flex flex-col items-center">
         {/*  Semi-Circle */}
-        <div className="relative w-72 h-36 overflow-hidden">
+        <div className="relative lg:w-72 lg:h-36 w-52 h-24 overflow-hidden ">
           <div
-            className="absolute top-0 left-0 w-72 h-72 rounded-full border-[35px] border-transparent"
+            className="absolute top-0 left-0 lg:w-72 lg:h-72 w-52 h-52  rounded-full border-[35px] border-transparent"
             style={{
               background: `
                 conic-gradient(
@@ -44,7 +44,7 @@ export default function ProjectProgress() {
 
         {/* Center Text  */}
         <div className="absolute top-16 flex flex-col items-center">
-          <h2 className="text-6xl font-bold text-gray-700 leading-none">
+          <h2 className="lg:text-6xl text-4xl font-bold text-gray-700 leading-none">
             {percentage}
             <span className="text-4xl">%</span>
           </h2>
@@ -53,7 +53,7 @@ export default function ProjectProgress() {
       </div>
 
       {/* Legend Indicators */}
-      <div className="flex justify-between items-center mt-7 px-4">
+      <div className="lg:flex justify-between items-center lg:mt-7 mt-12 px-4">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-[#1E7344]"></div>
           <span className="text-xs text-gray-500 font-medium">Completed</span>
