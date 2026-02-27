@@ -9,10 +9,10 @@ const DashboardLayout = () => {
       <div className="lg:sticky lg:top-0 lg:left-0 lg:h-screen">
         <Sidebar />
       </div>
-      
+
       <main className="flex-1 p-2">
         <Topbar />
-        
+
         <div className="bg-gray-100 p-4  rounded-2xl ">
           <Outlet />
         </div>

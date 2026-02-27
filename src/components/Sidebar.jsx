@@ -8,8 +8,11 @@ import {
   HelpCircle,
   LogOut,
 } from "lucide-react";
+import { use } from "react";
+import { AuthContext } from "../Provider/AuthProvider";
 
 const Sidebar = () => {
+  const { logOutUser } = use(AuthContext);
   const menuItems = [
     { icon: <LayoutDashboard size={20} />, label: "Dashboard", active: true },
     { icon: <CheckSquare size={20} />, label: "Tasks", badge: "12+" },
@@ -17,6 +20,10 @@ const Sidebar = () => {
     { icon: <BarChart2 size={20} />, label: "Analytics" },
     { icon: <Users size={20} />, label: "Team" },
   ];
+  const handleLogout = () => {
+    logOutUser();
+    alert("Logged out successfully");
+  };
 
   return (
     <aside className="w-64 lg:block hidden bg-gray-100  p-6 flex flex-col justify-between ">
@@ -56,9 +63,12 @@ const Sidebar = () => {
         <div className="flex items-center gap-3 text-gray-500 p-2 cursor-pointer">
           <HelpCircle size={20} /> Help
         </div>
-        <div className="flex items-center gap-3 text-gray-500 p-2 cursor-pointer">
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-3 w-full text-red-500 py-2 px-3 cursor-pointer hover:bg-red-400 hover:text-white rounded-lg"
+        >
           <LogOut size={20} /> Logout
-        </div>
+        </button>
 
         {/* Ad Box */}
         <div className="bg-[url('/sidebarImge.png')] bg-cover bg-center rounded-2xl p-6 text-white mt-2">

@@ -7,7 +7,7 @@ import TeamCollaboration from "../../components/TeamCollaboration";
 
 const Dashboard = () => {
   return (
-    <div className=" ">
+    <div className="bg-[#ffffffc4] ">
       {/* Stats Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <StatsCard
