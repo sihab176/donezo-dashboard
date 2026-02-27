@@ -4,6 +4,7 @@ import Homepage from "../pages/Homepage";
 import DashboardLayout from "../pages/DashboardLayout/DashboardLayout";
 import Dashboard from "../pages/DashboardLayout/Dashboard";
 import Register from "../components/Register";
+import PrivetRoute from "../Provider/PrivetRoute";
 
 export const router = createBrowserRouter([
   {
@@ -17,17 +18,21 @@ export const router = createBrowserRouter([
     ],
   },
   {
-      path:"/register",
-      Component:Register
-    },
-    {
-        path: "/dashboard",
-        Component: DashboardLayout,
-        children: [
-            {
-                index: true,
-                Component: Dashboard,
-            }
-        ]
-    }
+    path: "/register",
+    Component: Register,
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivetRoute>
+        <DashboardLayout></DashboardLayout>
+      </PrivetRoute>
+    ),
+    children: [
+      {
+        index: true,
+        Component: Dashboard,
+      },
+    ],
+  },
 ]);
